@@ -7,16 +7,11 @@
     const panel = document.getElementById(targetId);
     if (!panel) return;
 
-    // Determine current state
     const isOpen = btn.getAttribute('aria-expanded') === 'true';
-
-    // Toggle aria state
     btn.setAttribute('aria-expanded', String(!isOpen));
-
-    // Toggle visibility with Tailwind's 'hidden' class
     panel.classList.toggle('hidden', isOpen);
   });
-  const MY_EMAIL = "ibrahimouarrach3@gmail.com"; // <-- put your email here
+  const MY_EMAIL = "ibrahimouarrach3@gmail.com";
   const SUBJECT = "New message from portfolio site";
 
   document.getElementById("contact-form").addEventListener("submit", function (e) {
